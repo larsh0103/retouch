@@ -1,0 +1,7 @@
+.venv
+*.zip
+*.tar
+*.png
+*.ipynb
+__pycache__
+wandb

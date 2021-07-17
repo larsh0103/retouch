@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "retouch"
+version = "0.1.0"
+description = "AI Retouch"
+authors = [
+    "Lars Vagnes <larsvagnes@gmail.com>"
+]
+### To run this task you need to run "poe force-cuda11" after running "poetry install"
+[tool.poetry.dev-dependencies]
+poethepoet = "^0.10.0"
+
+[tool.poe.tasks]
+force-cuda11 = "python -m pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html"
+
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+numpy = "^1.20.0"
+opencv-contrib-python = "^4.5.2.52"
+opencv-python = "^4.5.2.52" 
+tqdm = "^4.60.0"
+scikit-image = "^0.18.2"
+wandb = "^0.10.33"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
