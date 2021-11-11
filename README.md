@@ -1,4 +1,6 @@
-AI Auto Retouch
+Auto Retouch
 
-This repository contains the implementation of the paper "Lars Vågnes Awesome paper on face retouch", and sample images.
+This repository contains an UNOFFICIAL implementation of the paper "AutoRetouch: Automatic Professional Face Retouching". 
+
+
 
